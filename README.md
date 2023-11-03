@@ -2,7 +2,7 @@
 
 * Oyuncular ve oynadıkları takımlar olmak üzere 2 entityden olusan basit bir monolite projedir.
 * Projenin veritabanını olusturan sql dosyasi templates altindaki sql klasöründe mevcuttur.
-* Documantasyon documants dizininde bulunuyor.Doxygen ile olusturulmustur.
+* Documantasyon documents dizininde bulunuyor.Doxygen ile olusturulmustur.
 
 
 ## Projeye Ait Request ve Response Yapısı Aşağıdaki Gibidir
