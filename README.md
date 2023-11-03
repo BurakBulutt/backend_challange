@@ -7,5 +7,5 @@
 
 ## Projeye Ait Request ve Response Yapısı Aşağıdaki Gibidir
 
-![Takim Save Islemi](https://img.imgyukle.com/2023/11/03/yJJA6e.png)
-![Takim Get All Islemi](https://img.imgyukle.com/2023/11/03/yJJ8m1.png)
+![Takim Save Islemi](https://github.com/BurakBulutt/backend_challange/blob/master/documents/screenshots/team_getAll.png)
+![Takim Get All Islemi](https://github.com/BurakBulutt/backend_challange/blob/master/documents/screenshots/team_post.png)
