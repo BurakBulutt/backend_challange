@@ -1,0 +1,78 @@
+\doxysection{com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller}{}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller}\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Response\+Entity$<$ Base\+Response$<$ Player\+Response\+List $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a41cccf5104b9671e0d378251e675c767}{get\+Players}} ()
+\item 
+Response\+Entity$<$ Base\+Response$<$ Player\+Response\+List $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_abe98cd73128c9cda5d668e4343f0aa34}{get\+Players\+By\+Team\+Id}} (@Path\+Variable String id)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_ae0d2b685a48fa105726d72703155cb03}{get\+Player\+By\+Id}} (@Path\+Variable String id)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a2d318123f62931abc578867f789f908d}{save}} (@Request\+Body Player\+Request request)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_aa6c36c8cb5e3b457a0ffb0e3f9b2a2bf}{update}} (@Path\+Variable(name="{}id"{}) String id, @Request\+Body Player\+Request request)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Void $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a12a0a7f60772ff230bbc1bbf8411f500}{delete}} (@Path\+Variable String id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Player\+Service \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a8face9e651c1e43c8329a63ebdc994b4}{service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Player sinifinin api nesnesidir. Responselarin statuslari -\/\texorpdfstring{$>$}{>} 200 = "{}success"{} , 400 = "{}bad request"{} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a12a0a7f60772ff230bbc1bbf8411f500}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a12a0a7f60772ff230bbc1bbf8411f500} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!delete@{delete}}
+\index{delete@{delete}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Void $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+delete (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_ae0d2b685a48fa105726d72703155cb03}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_ae0d2b685a48fa105726d72703155cb03} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!getPlayerById@{getPlayerById}}
+\index{getPlayerById@{getPlayerById}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{getPlayerById()}{getPlayerById()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+get\+Player\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a41cccf5104b9671e0d378251e675c767}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a41cccf5104b9671e0d378251e675c767} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!getPlayers@{getPlayers}}
+\index{getPlayers@{getPlayers}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{getPlayers()}{getPlayers()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Player\+Response\+List $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+get\+Players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_abe98cd73128c9cda5d668e4343f0aa34}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_abe98cd73128c9cda5d668e4343f0aa34} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!getPlayersByTeamId@{getPlayersByTeamId}}
+\index{getPlayersByTeamId@{getPlayersByTeamId}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{getPlayersByTeamId()}{getPlayersByTeamId()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Player\+Response\+List $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+get\+Players\+By\+Team\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a2d318123f62931abc578867f789f908d}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a2d318123f62931abc578867f789f908d} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!save@{save}}
+\index{save@{save}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+save (\begin{DoxyParamCaption}\item[{@Request\+Body Player\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_aa6c36c8cb5e3b457a0ffb0e3f9b2a2bf}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_aa6c36c8cb5e3b457a0ffb0e3f9b2a2bf} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!update@{update}}
+\index{update@{update}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Player\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+update (\begin{DoxyParamCaption}\item[{@Path\+Variable(name="{}id"{}) String}]{id,  }\item[{@Request\+Body Player\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a8face9e651c1e43c8329a63ebdc994b4}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_player_controller_a8face9e651c1e43c8329a63ebdc994b4} 
+\index{com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}!service@{service}}
+\index{service@{service}!com.example.example\_6.controller.PlayerController@{com.example.example\_6.controller.PlayerController}}
+\doxysubsubsection{\texorpdfstring{service}{service}}
+{\footnotesize\ttfamily final Player\+Service com.\+example.\+example\+\_\+6.\+controller.\+Player\+Controller.\+service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lothe/\+Idea\+Projects/\+Example\+\_\+6/src/main/java/com/example/example\+\_\+6/controller/\mbox{\hyperlink{_player_controller_8java}{Player\+Controller.\+java}}\end{DoxyCompactItemize}

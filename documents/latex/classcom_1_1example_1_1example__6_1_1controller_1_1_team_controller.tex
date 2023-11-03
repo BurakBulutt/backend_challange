@@ -1,0 +1,70 @@
+\doxysection{com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller Class Reference}
+\hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller}{}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller}\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Response\+Entity$<$ Base\+Response$<$ Team\+Response\+List $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a7280335f7f422aae777c4fd87f2c8384}{get\+Teams}} ()
+\item 
+Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a9b494ada9e9a94149ce8a26119a81047}{get\+Team\+By\+Id}} (@Path\+Variable String id)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_aa1877822295094156c05a308f4acdf2e}{save}} (@Request\+Body Team\+Request request)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a232d4d04126912bf93a540c4f942c7ee}{update}} (@Path\+Variable String id, @Request\+Body Team\+Request request)
+\item 
+Response\+Entity$<$ Base\+Response$<$ Void $>$ $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af37548483bb9a69a3c3aabbb875749e6}{delete}} (@Path\+Variable String id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Team\+Service \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af2e62f3462fcb8b051adf8b828aa7d8a}{service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Team sinifinin api nesnesidir. Responselarin statuslari -\/\texorpdfstring{$>$}{>} 200 = "{}success"{} , 400 = "{}bad request"{} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af37548483bb9a69a3c3aabbb875749e6}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af37548483bb9a69a3c3aabbb875749e6} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!delete@{delete}}
+\index{delete@{delete}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Void $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+delete (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a9b494ada9e9a94149ce8a26119a81047}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a9b494ada9e9a94149ce8a26119a81047} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!getTeamById@{getTeamById}}
+\index{getTeamById@{getTeamById}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{getTeamById()}{getTeamById()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+get\+Team\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a7280335f7f422aae777c4fd87f2c8384}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a7280335f7f422aae777c4fd87f2c8384} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!getTeams@{getTeams}}
+\index{getTeams@{getTeams}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{getTeams()}{getTeams()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Team\+Response\+List $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+get\+Teams (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_aa1877822295094156c05a308f4acdf2e}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_aa1877822295094156c05a308f4acdf2e} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!save@{save}}
+\index{save@{save}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+save (\begin{DoxyParamCaption}\item[{@Request\+Body Team\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a232d4d04126912bf93a540c4f942c7ee}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_a232d4d04126912bf93a540c4f942c7ee} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!update@{update}}
+\index{update@{update}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Response\+Entity$<$ Base\+Response$<$ Team\+Response $>$ $>$ com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+update (\begin{DoxyParamCaption}\item[{@Path\+Variable String}]{id,  }\item[{@Request\+Body Team\+Request}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af2e62f3462fcb8b051adf8b828aa7d8a}\label{classcom_1_1example_1_1example__6_1_1controller_1_1_team_controller_af2e62f3462fcb8b051adf8b828aa7d8a} 
+\index{com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}!service@{service}}
+\index{service@{service}!com.example.example\_6.controller.TeamController@{com.example.example\_6.controller.TeamController}}
+\doxysubsubsection{\texorpdfstring{service}{service}}
+{\footnotesize\ttfamily final Team\+Service com.\+example.\+example\+\_\+6.\+controller.\+Team\+Controller.\+service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lothe/\+Idea\+Projects/\+Example\+\_\+6/src/main/java/com/example/example\+\_\+6/controller/\mbox{\hyperlink{_team_controller_8java}{Team\+Controller.\+java}}\end{DoxyCompactItemize}

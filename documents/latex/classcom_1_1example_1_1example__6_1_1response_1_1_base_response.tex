@@ -1,0 +1,95 @@
+\doxysection{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{Base\+Response}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a1d1b197c54e9e808c71855211cb18d2e}{success}} (T data, String \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a571ce189594419d684abede981e18e4f}{message}})
+\item 
+static$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{Base\+Response}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a2dfd8ed6b6f425fe27e25774900eaa7d}{error}} (String \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a571ce189594419d684abede981e18e4f}{message}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a3411bcefe6e19c6fba53f8393b3b393e}{status}}
+\item 
+String \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a571ce189594419d684abede981e18e4f}{message}}
+\item 
+T \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a447cbb3a082a77663b8ac858679e0367}{response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controllarlar icin temel response sinifidir. 
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & Entitylerin Response nesneleri atanir. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a2dfd8ed6b6f425fe27e25774900eaa7d}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a2dfd8ed6b6f425fe27e25774900eaa7d} 
+\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}!error@{error}}
+\index{error@{error}!com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily static$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{Base\+Response}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response}}$<$ T $>$.error (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Basarisiz bir request sonucunda status ve message bilgilerini icerir. 
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a1d1b197c54e9e808c71855211cb18d2e}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a1d1b197c54e9e808c71855211cb18d2e} 
+\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}!success@{success}}
+\index{success@{success}!com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{success()}{success()}}
+{\footnotesize\ttfamily static$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{Base\+Response}}$<$ T $>$ \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response}}$<$ T $>$.success (\begin{DoxyParamCaption}\item[{T}]{data,  }\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Basarili bir request sonucunda request ile ilgili status message ve response ile donen datayi icerir. 
+\begin{DoxyParams}{Parameters}
+{\em data} & http tarafina gonderilen requesti icerir \\
+\hline
+{\em message} & request basarili olursa gonderilecek message bilgilerini icerir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\+T$>$} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a571ce189594419d684abede981e18e4f}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a571ce189594419d684abede981e18e4f} 
+\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}!message@{message}}
+\index{message@{message}!com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily String \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response}}$<$ T $>$.message\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a447cbb3a082a77663b8ac858679e0367}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a447cbb3a082a77663b8ac858679e0367} 
+\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}!response@{response}}
+\index{response@{response}!com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response}}$<$ T $>$.response\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a3411bcefe6e19c6fba53f8393b3b393e}\label{classcom_1_1example_1_1example__6_1_1response_1_1_base_response_a3411bcefe6e19c6fba53f8393b3b393e} 
+\index{com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}!status@{status}}
+\index{status@{status}!com.example.example\_6.response.BaseResponse$<$ T $>$@{com.example.example\_6.response.BaseResponse$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily Integer \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1response_1_1_base_response}{com.\+example.\+example\+\_\+6.\+response.\+Base\+Response}}$<$ T $>$.status\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lothe/\+Idea\+Projects/\+Example\+\_\+6/src/main/java/com/example/example\+\_\+6/response/\mbox{\hyperlink{_base_response_8java}{Base\+Response.\+java}}\end{DoxyCompactItemize}

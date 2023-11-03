@@ -1,0 +1,137 @@
+\doxysection{com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl Class Reference}
+\hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl}{}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl}\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+Inheritance diagram for com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Player\+Dto\+List \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a20d5f12dbf48a935f38d907f2983949f}{find\+All}} ()
+\item 
+Player\+Dto \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a34363db4c77d1099cf3528e467bfaef1}{find\+By\+Id}} (Long id)
+\item 
+Player\+Dto\+List \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_ad28bba079be31722c6f27309b2fd9cfb}{find\+Players\+By\+Team\+Id}} (String team\+Id)
+\item 
+Player\+Dto \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af8503b01cdc4ea48f1f4fd240384e958}{save}} (Player\+Dto dto)
+\item 
+Player\+Dto \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a1b0d37aa7ea080174b277a9fbe19262d}{update}} (Long id, Player\+Dto dto)
+\item 
+Void \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a0eb2496e4564e31d1f9c8caa6eb6a402}{delete}} (Long id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Player\+Repository \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a09532d55da4ec89e03600235ff8b4bc7}{repository}}
+\item 
+final Team\+Service \mbox{\hyperlink{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af380365b55e9731c33353b5b50dc63db}{team\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Player\+Service implamantasyonu 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a0eb2496e4564e31d1f9c8caa6eb6a402}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a0eb2496e4564e31d1f9c8caa6eb6a402} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!delete@{delete}}
+\index{delete@{delete}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily Void com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+delete (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+Gonderilen id numarasina ait takimi siler. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Silinecek takimin bulunmasi icin gerekli id alani. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a20d5f12dbf48a935f38d907f2983949f}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a20d5f12dbf48a935f38d907f2983949f} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!findAll@{findAll}}
+\index{findAll@{findAll}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily Player\+Dto\+List com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+find\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tum oyunculari iceren listeyi dto\+List seklinde dondurur. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a34363db4c77d1099cf3528e467bfaef1}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a34363db4c77d1099cf3528e467bfaef1} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!findById@{findById}}
+\index{findById@{findById}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{findById()}{findById()}}
+{\footnotesize\ttfamily Player\+Dto com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+find\+By\+Id (\begin{DoxyParamCaption}\item[{Long}]{id }\end{DoxyParamCaption})}
+
+Girilen id\textquotesingle{}ye gore oyuncuyu dto seklinde dondurur. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Istenen oyuncunun bulunmasi icin gerekli id alani. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_ad28bba079be31722c6f27309b2fd9cfb}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_ad28bba079be31722c6f27309b2fd9cfb} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!findPlayersByTeamId@{findPlayersByTeamId}}
+\index{findPlayersByTeamId@{findPlayersByTeamId}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{findPlayersByTeamId()}{findPlayersByTeamId()}}
+{\footnotesize\ttfamily Player\+Dto\+List com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+find\+Players\+By\+Team\+Id (\begin{DoxyParamCaption}\item[{String}]{team\+Id }\end{DoxyParamCaption})}
+
+Takimlarda oynayan oyunculari dtolist seklinde dondurur. 
+\begin{DoxyParams}{Parameters}
+{\em team\+Id} & Oyunculari takimlarina gore filtrelemek icin gerekli takim id alani. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af8503b01cdc4ea48f1f4fd240384e958}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af8503b01cdc4ea48f1f4fd240384e958} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!save@{save}}
+\index{save@{save}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily Player\+Dto com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+save (\begin{DoxyParamCaption}\item[{Player\+Dto}]{dto }\end{DoxyParamCaption})}
+
+Once gonderilen oyuncu nesnesinin icerisindeki team\+Id ye ait bir takim olup olmadigi kontrol edilir. Gonderilen oyuncuyu veritabanina kaydeder daha sonra entityi dtoya dondurup return eder. 
+\begin{DoxyParams}{Parameters}
+{\em dto} & kaydedilecek oyuncunun verilerini tutar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a1b0d37aa7ea080174b277a9fbe19262d}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a1b0d37aa7ea080174b277a9fbe19262d} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!update@{update}}
+\index{update@{update}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily Player\+Dto com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+update (\begin{DoxyParamCaption}\item[{Long}]{id,  }\item[{Player\+Dto}]{dto }\end{DoxyParamCaption})}
+
+Girilen id\textquotesingle{}ye gore oyuncuyu bulup dto nesnesinde doldurulan alanlar icin guncelleme islemini yapar. 
+\begin{DoxyParams}{Parameters}
+{\em id} & Kaydedilecek oyuncunun bulunması icin gerekli id alani. \\
+\hline
+{\em dto} & Guncellenmesi istenen alanlarin bilgilerini tutan nesne. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a09532d55da4ec89e03600235ff8b4bc7}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_a09532d55da4ec89e03600235ff8b4bc7} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!repository@{repository}}
+\index{repository@{repository}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{repository}{repository}}
+{\footnotesize\ttfamily final Player\+Repository com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af380365b55e9731c33353b5b50dc63db}\label{classcom_1_1example_1_1example__6_1_1impl_1_1_player_service_impl_af380365b55e9731c33353b5b50dc63db} 
+\index{com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}!teamService@{teamService}}
+\index{teamService@{teamService}!com.example.example\_6.impl.PlayerServiceImpl@{com.example.example\_6.impl.PlayerServiceImpl}}
+\doxysubsubsection{\texorpdfstring{teamService}{teamService}}
+{\footnotesize\ttfamily final Team\+Service com.\+example.\+example\+\_\+6.\+impl.\+Player\+Service\+Impl.\+team\+Service\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/lothe/\+Idea\+Projects/\+Example\+\_\+6/src/main/java/com/example/example\+\_\+6/impl/\mbox{\hyperlink{_player_service_impl_8java}{Player\+Service\+Impl.\+java}}\end{DoxyCompactItemize}
