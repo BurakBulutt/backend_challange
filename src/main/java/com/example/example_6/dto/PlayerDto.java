@@ -5,6 +5,7 @@ import com.example.example_6.entity.Team;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
+
 /**
  * Player sinifinin dto objesini temsil eder.
  */

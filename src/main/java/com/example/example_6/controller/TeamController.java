@@ -23,7 +23,8 @@ public class TeamController {
     @GetMapping
     private ResponseEntity<BaseResponse<TeamResponseList>> getTeams() {
         try {
-            return ResponseEntity.ok(BaseResponse.success(new TeamResponseList(service.findAll().getTeamDtoList()), "Takimlar Basariyla Getirildi"));
+            return ResponseEntity.ok(BaseResponse.success
+                    (new TeamResponseList(service.findAll().getTeamDtoList()), "Takimlar Basariyla Getirildi"));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
@@ -64,6 +65,4 @@ public class TeamController {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
     }
-
-
 }

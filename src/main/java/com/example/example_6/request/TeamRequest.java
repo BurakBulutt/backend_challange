@@ -5,12 +5,19 @@ import lombok.Data;
 
 import java.util.ArrayList;
 
+/**
+ * Team'a ait request nesnesi.
+ */
 @Data
 public class TeamRequest {
     private String id;
     private String name;
     private String country;
 
+    /**
+     * Requesti dtoya dönüştürür.
+     * @return PlayerDto
+     */
     public TeamDto toDto(){
         return TeamDto.builder()
                 .id(id)
@@ -20,3 +27,4 @@ public class TeamRequest {
                 .build();
     }
 }
+

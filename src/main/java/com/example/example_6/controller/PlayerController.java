@@ -22,7 +22,8 @@ public class PlayerController {
     @GetMapping
     private ResponseEntity<BaseResponse<PlayerResponseList>> getPlayers() {
         try {
-            return ResponseEntity.ok(BaseResponse.success(new PlayerResponseList(service.findAll().getPlayerDtoList()), "Oyuncular Basariyla Getirildi"));
+            return ResponseEntity.ok(BaseResponse.success
+                    (new PlayerResponseList(service.findAll().getPlayerDtoList()), "Oyuncular Basariyla Getirildi"));
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
@@ -31,7 +32,8 @@ public class PlayerController {
     @GetMapping("/teamId/{id}")
     private ResponseEntity<BaseResponse<PlayerResponseList>> getPlayersByTeamId(@PathVariable String id) {
         try {
-            return ResponseEntity.ok(BaseResponse.success(new PlayerResponseList(service.findPlayersByTeamId(id).getPlayerDtoList()), "Oyuncular Basariyla Getirildi"));
+            return ResponseEntity.ok(BaseResponse.success
+                    (new PlayerResponseList(service.findPlayersByTeamId(id).getPlayerDtoList()), "Oyuncular Basariyla Getirildi"));
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
@@ -40,7 +42,8 @@ public class PlayerController {
     @GetMapping("/playerId/{id}")
     private ResponseEntity<BaseResponse<PlayerResponse>> getPlayerById(@PathVariable String id) {
         try {
-            return ResponseEntity.ok(BaseResponse.success(PlayerResponse.toResponse(service.findById(Long.parseLong(id))), "Oyuncu Bulundu"));
+            return ResponseEntity.ok(BaseResponse.success
+                    (PlayerResponse.toResponse(service.findById(Long.parseLong(id))), "Oyuncu Bulundu"));
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
@@ -58,7 +61,8 @@ public class PlayerController {
     @PutMapping("{id}")
     private ResponseEntity<BaseResponse<PlayerResponse>> update(@PathVariable(name = "id") String id, @RequestBody PlayerRequest request) {
         try {
-            return ResponseEntity.ok(BaseResponse.success(PlayerResponse.toResponse(service.update(Long.parseLong(id), request.toDto())), "Update Basarili"));
+            return ResponseEntity.ok(BaseResponse.success
+                    (PlayerResponse.toResponse(service.update(Long.parseLong(id), request.toDto())), "Update Basarili"));
         } catch (NotFoundException e) {
             return ResponseEntity.badRequest().body(BaseResponse.error(e.getMessage()));
         }
