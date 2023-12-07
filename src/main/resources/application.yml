@@ -3,9 +3,12 @@ server:
 spring:
   datasource:
     username: root
-    password: 123456
+    password: burak2424
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/example_db?useSSL=false&AllowPublicKeyRetrieval=true&serverTimezone=UTC
+  batch:
+    job:
+      enabled: false
   jpa:
     hibernate:
       ddl-auto: update

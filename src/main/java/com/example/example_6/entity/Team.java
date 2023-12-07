@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -56,6 +57,9 @@ public class Team {
     @JsonManagedReference
     private List<Player> playerList;
 
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date checkedAt;
+
     /**
      * Takim nesnelerini TakimDto nesnelerine donusturur.
      * @return
@@ -66,6 +70,7 @@ public class Team {
                 .name(name)
                 .country(country)
                 .playerList(playerList)
+                .checkedAt(checkedAt)
                 .build();
     }
 }

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,6 +20,7 @@ public class TeamDto {
     private String country;
     @JsonIgnore
     private List<Player> playerList;
+    private Date checkedAt;
 
     /**
      * Dto objesini Entity objesine cevirir.
@@ -30,6 +32,7 @@ public class TeamDto {
                 .name(name)
                 .country(country)
                 .playerList(playerList)
+                .checkedAt(checkedAt)
                 .build();
     }
 }

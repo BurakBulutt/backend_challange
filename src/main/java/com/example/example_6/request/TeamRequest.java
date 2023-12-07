@@ -4,6 +4,7 @@ import com.example.example_6.dto.TeamDto;
 import lombok.Data;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Team'a ait request nesnesi.
@@ -24,6 +25,7 @@ public class TeamRequest {
                 .name(name)
                 .country(country)
                 .playerList(new ArrayList<>())
+                .checkedAt(new Date())
                 .build();
     }
 }
