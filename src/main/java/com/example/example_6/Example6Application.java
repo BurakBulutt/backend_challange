@@ -1,5 +1,7 @@
 package com.example.example_6;
 
+import com.hazelcast.core.Hazelcast;
+import com.hazelcast.core.HazelcastInstance;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.boot.SpringApplication;
@@ -13,14 +15,9 @@ public class Example6Application {
         SpringApplication.run(Example6Application.class, args);
     }
 
-    @Bean
-    public JobBuilder getInstance(){
-        return new JobBuilder("getJob");
-    }
-
-    @Bean
-    public StepBuilder getInstanceStep(){
-        return new StepBuilder("getStep");
+    @Bean("hazelCastInstance")
+    public HazelcastInstance hazelcastInstance(){
+        return Hazelcast.newHazelcastInstance();
     }
 
 }

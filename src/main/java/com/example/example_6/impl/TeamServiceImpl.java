@@ -2,11 +2,18 @@ package com.example.example_6.impl;
 
 import com.example.example_6.dto.TeamDto;
 import com.example.example_6.dto.TeamDtoList;
+import com.example.example_6.entity.Information;
 import com.example.example_6.entity.Team;
 import com.example.example_6.exception.NotFoundException;
+import com.example.example_6.repository.InformationRepository;
 import com.example.example_6.repository.TeamRepository;
 import com.example.example_6.service.TeamService;
+import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.map.IMap;
+import jakarta.annotation.Resource;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -19,6 +26,11 @@ import java.util.Optional;
 public class TeamServiceImpl implements TeamService {
 
     private final TeamRepository repository;
+
+    @Resource(name = "hazelCastInstance")
+    private final HazelcastInstance hazelcastInstance;
+    @Resource(name = "rabbitTemplate")
+    private final RabbitTemplate rabbitTemplate;
 
     /**
      * Tum takimlari iceren listeyi dtoList seklinde dondurur.
@@ -36,7 +48,16 @@ public class TeamServiceImpl implements TeamService {
      */
     @Override
     public TeamDto findById(String id) {
-        return repository.findById(id).orElseThrow(()-> new NotFoundException("Takim Bulunamadi")).toDto();
+        IMap<String,TeamDto> teamCache = hazelcastInstance.getMap("teamCache");
+        TeamDto cacheTeam = teamCache.get(id);
+
+        if (cacheTeam != null){
+            return cacheTeam;
+        }
+        TeamDto team = repository.findById(id).orElseThrow(()-> new NotFoundException("Takim Bulunamadi")).toDto();
+        teamCache.put(team.getId(),team);
+        rabbitTemplate.convertAndSend(team);
+        return team;
     }
 
     /**

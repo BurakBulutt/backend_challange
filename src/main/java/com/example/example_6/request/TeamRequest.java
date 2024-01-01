@@ -25,7 +25,6 @@ public class TeamRequest {
                 .name(name)
                 .country(country)
                 .playerList(new ArrayList<>())
-                .checkedAt(new Date())
                 .build();
     }
 }

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -19,7 +20,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = Team.TABLE)
-public class Team {
+public class Team implements Serializable {
     /**
      * Tablo Adi    */
     public static final String TABLE = "team";
@@ -53,12 +54,10 @@ public class Team {
     /**
      * Takima ait oyuncularin listesi bulunur.
      */
-    @OneToMany(mappedBy = "team",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "team",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<Player> playerList;
 
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date checkedAt;
 
     /**
      * Takim nesnelerini TakimDto nesnelerine donusturur.
@@ -70,7 +69,6 @@ public class Team {
                 .name(name)
                 .country(country)
                 .playerList(playerList)
-                .checkedAt(checkedAt)
                 .build();
     }
 }

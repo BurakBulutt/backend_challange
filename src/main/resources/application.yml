@@ -6,9 +6,16 @@ spring:
     password: burak2424
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/example_db?useSSL=false&AllowPublicKeyRetrieval=true&serverTimezone=UTC
-  batch:
-    job:
-      enabled: false
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 3
   jpa:
     hibernate:
       ddl-auto: update

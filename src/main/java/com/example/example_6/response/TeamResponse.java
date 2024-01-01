@@ -21,7 +21,6 @@ public class TeamResponse {
     private String name;
     private String country;
     private List<PlayerDto> playerList;
-    private Date checkedAt;
 
     /**
      * Gelen dto nesnesini response nesnesine donusturur.
@@ -34,7 +33,6 @@ public class TeamResponse {
                 .name(dto.getName())
                 .country(dto.getCountry())
                 .playerList(new PlayerDtoList(dto.getPlayerList()).getPlayerDtoList())
-                .checkedAt(dto.getCheckedAt())
                 .build();
     }
 }

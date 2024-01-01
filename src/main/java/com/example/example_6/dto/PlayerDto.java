@@ -6,12 +6,14 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * Player sinifinin dto objesini temsil eder.
  */
 @Data
 @Builder
-public class PlayerDto {
+public class PlayerDto implements Serializable {
     private Long id;
     private String fullName;
     private String position;

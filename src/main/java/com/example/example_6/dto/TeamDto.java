@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -14,13 +15,12 @@ import java.util.List;
  */
 @Data
 @Builder
-public class TeamDto {
+public class TeamDto implements Serializable {
     private String id;
     private String name;
     private String country;
     @JsonIgnore
     private List<Player> playerList;
-    private Date checkedAt;
 
     /**
      * Dto objesini Entity objesine cevirir.
@@ -32,7 +32,6 @@ public class TeamDto {
                 .name(name)
                 .country(country)
                 .playerList(playerList)
-                .checkedAt(checkedAt)
                 .build();
     }
 }
